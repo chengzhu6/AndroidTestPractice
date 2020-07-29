@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidTestPractice</string>
+    <string name="username_edit_text_placeholder">Please input username</string>
+    <string name="password_edit_text_placeholder">Please input password</string>
+    <string name="login">Login</string>
+    <string name="login_activity">LoginActivity</string>
 </resources>
