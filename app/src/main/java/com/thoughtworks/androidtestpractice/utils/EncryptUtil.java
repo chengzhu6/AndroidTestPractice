@@ -1,5 +1,7 @@
 package com.thoughtworks.androidtestpractice.utils;
 
+import androidx.annotation.NonNull;
+
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -8,7 +10,7 @@ import java.util.Arrays;
 public class EncryptUtil {
     private static final char[] hexCode = "0123456789ABCDEF".toCharArray();
 
-    public static String getMD5(String originalString) {
+    public static String getMD5(@NonNull String originalString) {
         MessageDigest md;
         String result = originalString;
         try {

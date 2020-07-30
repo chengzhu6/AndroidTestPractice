@@ -4,7 +4,7 @@ import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
 import com.thoughtworks.androidtestpractice.dao.UserDao;
-import com.thoughtworks.androidtestpractice.entities.User;
+import com.thoughtworks.androidtestpractice.dao.entities.User;
 
 @Database(entities = {User.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {

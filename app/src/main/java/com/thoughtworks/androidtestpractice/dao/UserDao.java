@@ -4,7 +4,7 @@ import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.thoughtworks.androidtestpractice.entities.User;
+import com.thoughtworks.androidtestpractice.dao.entities.User;
 
 import io.reactivex.Maybe;
 import io.reactivex.Single;

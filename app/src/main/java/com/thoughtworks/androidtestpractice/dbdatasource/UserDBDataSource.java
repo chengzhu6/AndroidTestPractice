@@ -1,7 +1,7 @@
 package com.thoughtworks.androidtestpractice.dbdatasource;
 
 import com.thoughtworks.androidtestpractice.common.AppDatabase;
-import com.thoughtworks.androidtestpractice.entities.User;
+import com.thoughtworks.androidtestpractice.dao.entities.User;
 
 import io.reactivex.Maybe;
 import io.reactivex.Single;

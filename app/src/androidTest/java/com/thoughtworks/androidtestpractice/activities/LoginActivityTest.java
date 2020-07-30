@@ -1,14 +1,12 @@
 package com.thoughtworks.androidtestpractice.activities;
 
-import android.os.SystemClock;
-
 import androidx.test.espresso.assertion.ViewAssertions;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
 
 import com.thoughtworks.androidtestpractice.MyApplication;
 import com.thoughtworks.androidtestpractice.R;
-import com.thoughtworks.androidtestpractice.entities.User;
+import com.thoughtworks.androidtestpractice.dao.entities.User;
 import com.thoughtworks.androidtestpractice.repository.UserRepository;
 
 import org.junit.BeforeClass;
@@ -19,7 +17,6 @@ import org.junit.runners.JUnit4;
 
 import io.reactivex.Maybe;
 import io.reactivex.MaybeEmitter;
-import io.reactivex.internal.operators.maybe.MaybeCache;
 import io.reactivex.internal.operators.maybe.MaybeCreate;
 
 import static androidx.test.espresso.Espresso.onView;
@@ -68,8 +65,8 @@ public class LoginActivityTest {
     @Test
     public void should_login_failure_when_username_and_password_is_incorrect() {
         User user = new User();
-        user.username = "android";
-        user.password = "123456";
+        user.setUsername("android");
+        user.setPassword("123456");
         when(userRepository.findByName("android")).thenReturn(Maybe.just(user));
         onView(withId(R.id.username))
                 .perform(typeText("android"));
@@ -86,8 +83,8 @@ public class LoginActivityTest {
     @Test
     public void should_login_success_when_username_and_password_is_correct() {
         User user = new User();
-        user.username = "android";
-        user.password = "e10adc3949ba59abbe56e057f20f883e";
+        user.setUsername("android");
+        user.setPassword("e10adc3949ba59abbe56e057f20f883e");
         when(userRepository.findByName("android")).thenReturn(Maybe.just(user));
         onView(withId(R.id.username))
                 .perform(typeText("android"));
