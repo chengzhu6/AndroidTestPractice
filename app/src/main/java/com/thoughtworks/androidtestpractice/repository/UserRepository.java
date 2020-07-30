@@ -8,6 +8,7 @@ import io.reactivex.Maybe;
 public class UserRepository {
     private UserDBDataSource userDBDataSource;
 
+
     public UserRepository(UserDBDataSource userDBDataSource) {
         this.userDBDataSource = userDBDataSource;
     }

@@ -4,4 +4,8 @@
     <string name="password_edit_text_placeholder">Please input password</string>
     <string name="login">Login</string>
     <string name="login_activity">LoginActivity</string>
+    <string name="login_success_toast">Login Successfully</string>
+    <string name="password_invalid_toast">Password is invalid</string>
+    <string name="username_not_exist_toast">Username does not exist</string>
+    <string name="insert_data">InsertData</string>
 </resources>
